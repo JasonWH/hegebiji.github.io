@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[JavaScript]]></title>
-    <url>%2F2019%2F08%2F15%2FJavaScript%2F</url>
-    <content type="text"><![CDATA[基础JavaScript(JS)是一种轻量级脚本语言。它本身提供的核心语法不多 JS最常见的宿主环境有两个： 浏览器 服务器]]></content>
+    <title><![CDATA[JavaScript 1 脚本与宿主]]></title>
+    <url>%2F2018%2F08%2F01%2FJavaScript-1-%E8%84%9A%E6%9C%AC%E4%B8%8E%E5%AE%BF%E4%B8%BB%2F</url>
+    <content type="text"><![CDATA[脚本语言JavaScript是一种轻量级脚本语言。它本身提供的核心语法不多，只能做一些数学和逻辑运算。JavaScript本身不提供任何与I/O相关的API，包括I/O在内的底层API都是由宿主环境提供的。 宿主环境目前JavaScript已经可以嵌入很多种宿主环境了，甚至一些物联网环境也可以嵌入JavaScript。但最常见的宿主环境有两个： 浏览器 服务器（node项目） 各种宿主环境通过对象模型描述功能和接口，程序员可以通过JavaScript控制这些功能。 核心语法JavaScript的核心语法包括两个部分： 基本语法（如变量、常量、操作符、语句、控制流程等） 标准库（内置对象如Array、Date、Math等） 宿主环境API宿主环境API就是在该环境使用的接口，可以通过JavaScript调用。浏览器环境可以提供的API分为三大类： 浏览器控制类：操作浏览器 DOM类：操作网页元素 Web类：实现互联网的各种功能 服务器环境可以提供的各种操作系统的API，如文件操作API、网络通信API等。]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
   </entry>
 </search>
