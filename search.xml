@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaScript 2 基本语法]]></title>
+    <url>%2F2019%2F08%2F04%2FJavaScript-2-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[语句语句是为了完成某种任务而进行的操作。JavaScript中，程序的执行单位是行，一般情况下，每一行就是一个语句。1var a = 5 + 6; var 用于声明变量，这里声明了变量 a，然后将 5 + 6 的运算结果用 = 赋值给 a 。语句以 ; 作为结尾，一个 ; 表示一个语句结束。; 前没有任何内容，JavaScript引擎将视其为空语句。（无意义，但合乎语法规则）多个语句可以在一行。（不建议，但合乎语法规则） 表达式5 + 6 叫做表达式，是为了得到返回值的计算式。语句与表达式的区别在于，语句是为了完成某种任务，一般不需要返回值；表达式是为了得到某个返回值，所以一定会返回一个值。表达式不需要 ; 结尾。如果添加JavaScript引擎就视其为语句。125 + 6;'abcd'; 上面两行语句只是产生值，但没有意义。 变量变量是一个内存空间，这个空间用来存储“值”。如何引用存储在特定变量中的“值”呢？可以利用内存地址，也可以为变量起一个易于理解的名字——变量名。在JavaScript中使用变量名来引用变量中存储的“值”。 引用这个变量名就等同于引用这个“值”。JavaScript的变量区分大小写。var 用来声明变量，它通知JavaScript引擎要创建一个变量。123456var a; // 声明，如果只声明没有赋值，则该变量的值是“undefined”，表示“无定义”var a, b, c; // 可以同时声明多个变量a = 1; // 赋值a = 'hi'; // JavaScript是动态类型语言，变量的类型没有限制，随时变更类型var d = 1; // 声明和赋值可以合在一起e = 1; // 不用var也是有效的，这时变量e为全局变量，建议使用var声明变量 变量提升JavaScript引擎的工作方式是：在解析代码时，先获取所有被声明的变量，再一行一行的执行 。这种工作方式造成的结果就是，所有的变量声明语句都会被提升到代码头部位置，这就是变量提升(hoisting)12console.log(a);var a = 1; 上述代码并不会报错，正是因为变量提升，真正运行的是下面的代码123var a;console.log(a);a = 1; 这段代码显示的结果是 undefined ，表示变量 a 已声明，但并未赋值。变量提升有时会造成代码与我们预期效果不一致的情况，可是使用 ECMAScript6 中的 let 解决这个问题。 标识符标识符是用来识别各种值的合法名称。变量名就是最常见的标识符，还有函数名也是。JavaScript中标识符区分大小写。JavaScript标识符的命名规则如下： 第1个字符，可以是Unicode字母、下划线和美元符号； 第2个及以后的字符，可以是Unicode字母、数字、下划线和美元符号； 保留字不能用作标识符； 注释JavaScript中注释有两种形式123456// 单行注释/*多行注释*/]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JavaScript 1 脚本与宿主]]></title>
     <url>%2F2018%2F08%2F01%2FJavaScript-1-%E8%84%9A%E6%9C%AC%E4%B8%8E%E5%AE%BF%E4%B8%BB%2F</url>
     <content type="text"><![CDATA[脚本语言JavaScript是一种轻量级脚本语言。它本身提供的核心语法不多，只能做一些数学和逻辑运算。JavaScript本身不提供任何与I/O相关的API，包括I/O在内的底层API都是由宿主环境提供的。 宿主环境目前JavaScript已经可以嵌入很多种宿主环境了，甚至一些物联网环境也可以嵌入JavaScript。但最常见的宿主环境有两个： 浏览器 服务器（node项目） 各种宿主环境通过对象模型描述功能和接口，程序员可以通过JavaScript控制这些功能。 核心语法JavaScript的核心语法包括两个部分： 基本语法（如变量、常量、操作符、语句、控制流程等） 标准库（内置对象如Array、Date、Math等） 宿主环境API宿主环境API就是在该环境使用的接口，可以通过JavaScript调用。浏览器环境可以提供的API分为三大类： 浏览器控制类：操作浏览器 DOM类：操作网页元素 Web类：实现互联网的各种功能 服务器环境可以提供的各种操作系统的API，如文件操作API、网络通信API等。]]></content>
